@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- ICON -->    
+    <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="stylesheet" href="css/rehnas.css">
+    
+    <title>Rehnas Designer - Bridal Studio | Boutique | Beauty Salon</title>
+</head>
+<body>
+   
+<section class="intro-header">
+    <div class="block-w_half">
+        <div class="add-contact">
+            <div class="address">Snehalayam Road, Choondy, Aluva</div>
+            <div class="phone">+91 9447536333, +91 9447032466</div>
+        </div>
+
+        <div class="logo">
+            <img src="images/logo_big.png" alt="rehnas designer logo">
+        </div>
+
+        <nav class="intro-nav">
+            <a href="#">services</a>
+            <a href="#">about</a>
+            <a href="#">gallery</a>
+            <a href="#">location</a>
+            <a href="#">contact</a>
+        </nav>
+    </div>
+    
+    <div class="intro-service-links">
+        <a href="#" class="service-link">
+            <span>Rehnas Bridal Studio</span>
+        </a>
+    
+        <a href="#" class="service-link">
+            <span>Rehnas Boutique</span>
+        </a>
+
+        <a href="#" class="service-link">
+            <span>Rehnas Beauty Salon</span>
+        </a>
+    </div>
+</section>
+
+<section class="intro-content">
+    <div class="service-block"></div>
+    <div class="service-block service-img_left"></div>
+    <div class="service-block"></div>
+</section>
+    
+<script src="js/jq.js"></script>
+<script>
+    $("body").on("keydown", function(e){
+        if(e.keyCode == 65) {
+            $("*").css("outline", "1px solid red");
+            }
+        if(e.keyCode == 83) {
+            $("*").css("outline", "0");
+            }
+    });
+
+    $(".map").on("click", function(){
+        $(".map iframe").css("pointer-events", "auto");
+    })
+</script>
+
+</body>
+</html>
