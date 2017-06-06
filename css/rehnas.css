@@ -1,4 +1,4 @@
-* {
+*, *:after, *:after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,7 +15,7 @@ a {
     }
 
 .intro-header {
-    min-height: 100vh;
+/*    min-height: 100vh;*/
     background-image: 
         url(../images/intro-head_bg.png),
         linear-gradient(
@@ -25,7 +25,7 @@ a {
             );
     background-repeat: no-repeat;
     background-position: 80% 50%, 0 0;
-    background-size: 600px auto, auto;
+    background-size: contain, auto;
     display: flex;
     flex-direction: column;
     color: white;
@@ -42,10 +42,11 @@ a {
 
 .add-contact {
     margin: 0 auto 60px;
-    width: 60%;
+    width: 80%;
+    max-width: 600px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+/*    flex-direction: row;*/
+    justify-content: space-around;
     }
 
 .logo {
@@ -56,10 +57,11 @@ a {
     }
 
 .intro-nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
     margin: auto;
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-around;
     font-size: .8rem;
     font-weight: bold;
     text-transform: UPPERCASE;
@@ -78,9 +80,6 @@ a {
     }
 .intro-nav a:hover {
     background-size: 100% 100%;
-    }
-.intro-nav a + a {
-    margin-left: 40px;
     }
 
 .intro-service-links {
@@ -128,7 +127,55 @@ a {
     background-repeat: no-repeat;
     }
 
+.intro-service-block {
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    opacity: .8;
+    transition: .3s;
+    }
+.intro-service-block:hover {
+    opacity: 1;
+    }
+.intro-service-block:before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+.intro-service-block:nth-child(1):before {
+    background-image: url(../images/intro-service_bridal.jpg);
+    }
+.intro-service-block:nth-child(2):before {
+    background-image: url(../images/intro-service_boutique.jpg);
+    background-position: 100% 0;
+    right: 0; left: 50%;
+    }
+.intro-service-block:nth-child(3):before {
+    background-image: url(../images/intro-service_beauty.jpg);
+    }
 
+.intro-service-content {
+    width: 50%;
+    margin-left: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+.intro-service-block:nth-child(2) .intro-service-content {
+    margin-right: auto;
+    margin-left: 0;
+    }
+.intro-service-content h2 {
+    margin-bottom: 30px;
+    }
+.intro-service-content p {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: left;
+    }
 
 
 
