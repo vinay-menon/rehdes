@@ -42,10 +42,10 @@ a {
 
 .add-contact {
     margin: 0 auto 60px;
-    width: 65%;
+    width: 60%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     }
 
 .logo {
@@ -56,8 +56,9 @@ a {
     }
 
 .intro-nav {
+    width: 60%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: auto;
     font-size: .8rem;
     font-weight: bold;
@@ -91,9 +92,8 @@ a {
     }
 
 .service-link {
-    width: calc(100% / 3 - 120px);
+    width: 350px;
     min-height: 250px;
-/*    background-color: hsla(0,0%,10%,.9);*/
     display: flex;
     background-size: 100% 100%;
     background-repeat: no-repeat;
