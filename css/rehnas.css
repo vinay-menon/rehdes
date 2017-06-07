@@ -134,6 +134,15 @@ a {
     opacity: .8;
     transition: .3s;
     }
+.intro-service-block:nth-child(1) {
+    background-image: url(../images/service-block_bg01.jpg);
+    }
+.intro-service-block:nth-child(2) {
+    background-image: url(../images/service-block_bg02.jpg);
+    }
+.intro-service-block:nth-child(3) {
+    background-image: url(../images/service-block_bg03.jpg);
+    }
 .intro-service-block:hover {
     opacity: 1;
     }
@@ -163,6 +172,11 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: hsla(0,0%,100%,.6);
+    background-image: linear-gradient(white,white);
+    background-repeat: no-repeat;
+    background-size: 360px 40%;
+    background-position: 50% 50%;
     }
 .intro-service-block:nth-child(2) .intro-service-content {
     margin-right: auto;
