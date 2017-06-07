@@ -16,7 +16,6 @@ a {
 
 .intro-header {
 /*    min-height: 100vh;*/
-/*
     background-image: 
         url(../images/intro-head_bg.png),
         linear-gradient(
@@ -24,7 +23,7 @@ a {
             #000 20%,
             #6d5776
             );
-*/
+/*
     background-image: 
         url(../images/intro-head_bg.png),
         linear-gradient(
@@ -32,12 +31,13 @@ a {
             hsl(50,80%,100%),
             hsl(50,80%,90%)
             );
+*/
     background-repeat: no-repeat;
     background-position: 80% 50%, 0 0;
     background-size: contain, auto;
     display: flex;
     flex-direction: column;
-    color: #222;
+    color: white;
     padding: 60px 0;
     }
 
