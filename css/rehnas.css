@@ -510,8 +510,12 @@ h2 {
         flex-direction: column;
         }
     .service-link span {
+        font-size: .9rem;
         padding: 15px 10px;
         }    
+    .service-link:hover:before {
+        top: 5px; bottom: 5px;
+        }
     }
 
 @media(max-width: 430px) {
