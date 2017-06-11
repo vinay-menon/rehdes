@@ -159,10 +159,36 @@
                 $(this).html("close");
             }
     });
+    
+    $(function () {
+	
+		var header = $('.block-w_half');
+        
+		var mark = $('.intro-service-links');
+	
+        var top = mark.offset().top - parseFloat(mark.css('margin-top').replace(/auto/, 0));
 
-    $(".map").on("click", function(){
-        $(".map iframe").css("pointer-events", "auto");
-    })
+        $(window).on('scroll', function(event) {
+            // what the y position of the scroll is
+            var y = $(this).scrollTop();
+
+            // whether that's below the form
+            if (y >= top) {
+                // if so, ad the fixed class
+                if ( header.is('.fixed-header') ) {
+                    return;
+                    $(".block-w_half .logo img").attr("src", "images/logo_big - Copy.png")
+                }
+                header.addClass('fixed-header');
+                $(".block-w_half .logo img").attr("src", "images/logo_big - Copy.png")
+            } else {
+                // otherwise remove it
+                header.removeClass('fixed-header');
+                $(".block-w_half .logo img").attr("src", "images/logo_big.png")
+            }
+        });
+
+    });
 </script>
 
 </body>

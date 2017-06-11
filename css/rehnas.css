@@ -216,6 +216,34 @@ h2 {
     background-size: 100% 100%;
     }
 
+.fixed-header.block-w_half {
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 9999;
+    background-color: hsla(0,0%,100%,.9);
+    color: #222;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    }
+.fixed-header .logo {
+    padding: 0 0!important;
+    max-width: 100px;
+    margin: 0 0 0 0!important;
+    margin-left: 15px;
+    }
+.fixed-header .add-contact {
+    display: none;
+    }
+.fixed-header .nav-toggle {
+    position: relative;
+    left: -50px;
+    margin: auto;
+    border-color: #222;
+    }
+
 .intro-service-links {
     display: flex;
 /*    flex-grow: 1;*/
@@ -484,6 +512,10 @@ h2 {
     .nav-toggle {
         display: block;
         margin-bottom: 30px;
+        }
+    .fixed-header .nav-toggle {
+        display: block;
+        margin-bottom: 0;
         }
     .open-nav .nav-toggle {
         margin-bottom: 0;
