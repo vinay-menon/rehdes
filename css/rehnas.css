@@ -349,10 +349,26 @@ h2 {
     }
 
 .global-kids-banner {
-    text-align: center;
-    margin-bottom: 120px;
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-around;
+    padding: 30px;
+    background-image: 
+        linear-gradient(white, hsla(0,0%,100%,0)),
+        url(../images/bg_cloud.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: scroll, fixed;
     }
-.global-kids-banner img {
+.global-kids-content {
+    max-width: 400px;
+    margin: auto;
+    margin-left: 0;
+    padding: 0 0 0 30px;
+    }
+.global-kids-banner .logo {
+    margin-left: auto;
+    padding: 0 30px 0 0;
     }
 
 
