@@ -485,6 +485,9 @@ h2 {
         display: block;
         margin-bottom: 30px;
         }
+    .open-nav .nav-toggle {
+        margin-bottom: 0;
+        }
     
     .global-kids-banner {
         flex-wrap: wrap;
@@ -494,6 +497,22 @@ h2 {
         }
     .global-kids-pics {
         max-width: calc(100% - 300px);
+        }
+    }
+
+@media (max-width: 750px) {
+    .global-kids-pics {
+        flex-wrap: wrap;
+        max-width: 50%;
+        }
+    .gbk-item {
+        max-width: 100%;
+        }
+    .global-kids-banner .logo {
+        max-width: 50%;
+        }
+    .global-kids-banner .logo img {
+        max-width: 100%;
         }
     }
 
@@ -557,6 +576,7 @@ h2 {
 @media(max-width: 430px) {
     .global-kids-banner .logo {
         margin: 0 auto;
+        max-width: 100%;
         }
     .global-kids-pics {
         padding: 30px;
