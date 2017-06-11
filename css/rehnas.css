@@ -477,7 +477,7 @@ h2 {
         width: 100%;
         }
     .intro-header .logo {
-        padding: 5%;
+        padding: 0 5%;
         }   
     .intro-nav a {
         display: none;
