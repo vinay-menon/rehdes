@@ -7,8 +7,13 @@
 body {
     font-family: "Segoe UI", sans-serif;
     font-size: .8rem;
+/*
     background-image: url(../images/bg_poly02.svg);
     background-repeat: no-repeat;
+    background-image: url(../images/pattern3.jpg);
+    background-size: contain;
+*/
+    color: #444;
     }
 
 a {
@@ -24,11 +29,16 @@ h2 {
 /*    min-height: 100vh;*/
     background-image: 
         url(../images/intro-head_bg.png),
-        url(../images/poly_bg2.jpg)/*,
-        linear-gradient(
+        /**/url(../images/pattern3.jpg)/*,*/
+        /*linear-gradient(
             135deg,
             #000 20%,
             #6d5776
+            ),*/
+        /*linear-gradient(
+            135deg,
+            hsl(250,80%,90%),
+            hsl(50,80%,80%)
             )*/;
 /*
     background-image: 
@@ -41,12 +51,12 @@ h2 {
 */
     background-attachment: scroll, fixed;
     background-repeat: no-repeat;
-    background-position: 80% 0%, 0 0;
-    background-size: auto, cover /*auto*/;
+    background-position: 90% 0%, 0 0;
+    background-size: contain, cover /*auto*/;
     display: flex;
     flex-direction: column;
-    color: #222;
-    padding: 60px 0;
+    color: #fff;
+    padding: 120px 0 0;
     }
 
 .main-header {
@@ -71,7 +81,7 @@ h2 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 120px;
     }
 
 .intro-header .add-contact {
@@ -130,26 +140,33 @@ h2 {
 .intro-nav a:hover,
 .main-nav a:hover {
     background-size: 100% 100%;
-    color: #222;
     }
 
 .intro-service-links {
     display: flex;
-    flex-grow: 1;
-    justify-content: space-around;
-    padding-top: 30px;
+/*    flex-grow: 1;*/
+    justify-content: center;
+/*    padding-top: 30px;*/
     text-align: center;
     }
 
 .service-link {
     color: white;
+    flex: 1;
+/*
     width: 350px;
     min-height: 250px;
+*/
     display: flex;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    background-color: hsl(5,80%,55%);
     }
+.service-link:hover {
+    background-color: hsl(5,80%,45%);
+    }
+/*
 .service-link:nth-child(1) {
     background-image: url(../images/intro-service-link_bg-angled_left.svg);
     }
@@ -159,12 +176,15 @@ h2 {
 .service-link:nth-child(3) {
     background-image: url(../images/intro-service-link_bg-angled_right.svg);
     }
+*/
 .service-link span {
     margin: auto;
     padding: 30px 10px;
     text-transform: UPPERCASE;
     font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
+/*
     background-image:
         linear-gradient(
             transparent calc(100% - 2px),
@@ -177,6 +197,7 @@ h2 {
     background-size: 60% 100%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+*/
     }
 
 .intro-services {
@@ -187,10 +208,11 @@ h2 {
     position: relative;
     min-height: 600px;
     display: flex;
-    opacity: .8;
+/*    opacity: .8;*/
     transition: .3s;
+    background-color: white;
     }
-.intro-service-block:hover {
+.intro-service-block:hover:before {
     opacity: 1;
     }
 .intro-service-block:before {
@@ -200,6 +222,7 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: calc(100% - 20%) bottom;
+    opacity: .8;
     }
 .intro-service-block:nth-child(1):before {
     background-image: url(../images/intro-service_bridal.jpg);
@@ -207,7 +230,6 @@ h2 {
 .intro-service-block:nth-child(2):before {
     background-image: url(../images/intro-service_boutique.jpg);
     background-position: 50% 0;
-/*    background-position: right 0% bottom 0%;*/
     right: 0; left: 50%;
     }
 .intro-service-block:nth-child(3):before {
@@ -221,21 +243,27 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: hsla(0,0%,100%,.6);
+    background-color: hsla(0,0%,100%,1);
     background-repeat: no-repeat;
+    background-image: 
+        linear-gradient(
+            hsla(0,0%,100%,.8),
+            hsla(0,0%,100%,.8)
+            );
     background-size: 
-        360px 40%, 
+        360px 40%/*, 
         100% 100%, 
-        100% 100%;
+        100% 100%*/;
     background-position: 
-        50% 50%, 
+        50% 50%/*, 
         0 0, 
-        0 0;
+        0 0*/;
     }
 .intro-service-block:nth-child(2) .intro-service-content {
     margin-right: auto;
     margin-left: 0;
     }
+/*
 .intro-service-content:nth-child(1) {
     background-image: 
         linear-gradient(
@@ -272,6 +300,7 @@ h2 {
             ),
         url(../images/service-block_bg03.jpg);
     }
+*/
 
 .intro-service-content p {
     max-width: 300px;
