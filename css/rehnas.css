@@ -27,6 +27,8 @@ h2 {
 
 .section-seperator {
     height: 60px;
+    max-width: 80%;
+    margin: auto;
     background-image: url(../images/section-seperator.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
