@@ -109,6 +109,7 @@ h2 {
 .intro-header .logo {
 /*    margin-bottom: 60px;*/
     margin: 60px auto;
+    transition: .5s;
     }
 .intro-header .logo img {
 /*    width: 200px;*/
