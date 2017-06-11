@@ -351,6 +351,7 @@ h2 {
 .global-kids-banner {
     display: flex;
     flex-flow: row-reverse;
+    align-items: flex-start;
     justify-content: space-around;
     padding: 30px;
     background-image: 
@@ -362,9 +363,15 @@ h2 {
     }
 .global-kids-content {
     max-width: 400px;
-    margin: auto;
+    margin: 0 auto;
     margin-left: 0;
     padding: 0 0 0 30px;
+    }
+.global-kids-content h2 {
+    margin-bottom: 10px;
+    }
+.gbk-deets {
+    font-size: 1rem;
     }
 .global-kids-banner .logo {
     margin-left: auto;
