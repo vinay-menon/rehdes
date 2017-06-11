@@ -470,6 +470,9 @@ h2 {
 
 
 @media (max-width: 926px) {
+    .intro-header {
+        padding: 30px 0 0;
+        }
     .block-w_half {
         width: 100%;
         }
