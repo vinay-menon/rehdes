@@ -25,6 +25,16 @@ h2 {
     margin-bottom: 30px;
     }
 
+.section-seperator {
+    height: 60px;
+    background-image: url(../images/section-seperator.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border: 0;
+    margin-bottom: 60px;
+    opacity: .8;
+    }
+
 .intro-header {
     min-height: 100vh;
     background-image: 
@@ -221,7 +231,7 @@ h2 {
     }
 
 .intro-services {
-    margin-bottom: 120px;
+    margin-bottom: 60px;
     }
 
 .intro-service-block {
