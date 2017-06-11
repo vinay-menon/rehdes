@@ -161,10 +161,15 @@ h2 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-color: hsl(5,80%,55%);
+    background-color: hsla(335,20%,10%,.8);
     }
 .service-link:hover {
-    background-color: hsl(5,80%,45%);
+    background-image: 
+        linear-gradient(
+            -45deg,
+            hsla(392,80%,56%,0.88),
+            hsla(332,80%,36%,1)
+        );
     }
 /*
 .service-link:nth-child(1) {
@@ -182,7 +187,6 @@ h2 {
     padding: 30px 10px;
     text-transform: UPPERCASE;
     font-size: 1.2rem;
-    font-size: 1rem;
     font-weight: bold;
 /*
     background-image:
@@ -212,8 +216,15 @@ h2 {
     transition: .3s;
     background-color: white;
     }
-.intro-service-block:hover:before {
-    opacity: 1;
+.intro-service-block:after {
+    content: '';
+    position: absolute;
+    top: 30px; left: 30px; bottom: 30px; right: calc(50% + 30px);
+    border: 1px solid white;
+    opacity: .8;
+    }
+.intro-service-block:nth-child(2):after {
+    right: 30px; left: calc(50% + 30px);
     }
 .intro-service-block:before {
     content: '';
@@ -223,6 +234,9 @@ h2 {
     background-size: cover;
     background-position: calc(100% - 20%) bottom;
     opacity: .8;
+    }
+.intro-service-block:hover:before {
+    opacity: 1;
     }
 .intro-service-block:nth-child(1):before {
     background-image: url(../images/intro-service_bridal.jpg);
