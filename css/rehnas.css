@@ -349,10 +349,9 @@ h2 {
     }
 
 .global-kids-banner {
+    min-height: 50vh;
     display: flex;
-    flex-flow: row-reverse;
-    align-items: flex-start;
-    justify-content: space-around;
+    align-items: center;
     padding: 30px;
     background-image: 
         linear-gradient(white, hsla(0,0%,100%,0)),
@@ -362,10 +361,9 @@ h2 {
     background-attachment: scroll, fixed;
     }
 .global-kids-content {
-    max-width: 400px;
-    margin: 0 auto;
-    margin-left: 0;
-    padding: 0 0 0 30px;
+    width: 400px;
+    margin-left: auto;
+/*    padding: 0 0 0 30px;*/
     }
 .global-kids-content h2 {
     margin-bottom: 10px;
@@ -373,9 +371,28 @@ h2 {
 .gbk-deets {
     font-size: 1rem;
     }
+.global-kids-pics {
+    display: flex;
+    justify-content: center;
+    }
+.gbk-item {
+    max-width: 30%;
+    transform-origin: 50% 50%;
+    transform: rotate(-20deg);
+    }
+.gbk-item:nth-child(2) {
+    transform: rotate(10deg);
+    }
+.gbk-item:nth-child(3) {
+    transform: rotate(20deg);
+    }
+.gbk-item img {
+    max-width: 100%;
+    display: block;
+    border: 5px solid white;
+    }
 .global-kids-banner .logo {
-    margin-left: auto;
-    padding: 0 30px 0 0;
+/*    padding: 0 30px 0 0;*/
     }
 
 
