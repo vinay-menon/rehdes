@@ -152,7 +152,12 @@
     });
     
     $(".nav-toggle").on("click",function(){
-       $(".intro-nav").toggleClass("open-nav"); 
+        $(".intro-nav").toggleClass("open-nav"); 
+        if ($(this).html() == "close") {
+            $(this).html("menu");
+            } else {
+                $(this).html("close");
+            }
     });
 
     $(".map").on("click", function(){
