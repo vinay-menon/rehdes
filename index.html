@@ -40,12 +40,20 @@
         </div>
 
         <nav class="intro-nav">
+            <div class="nav-toggle">menu</div>
             <a href="services.html">services</a>
             <a href="#">about</a>
             <a href="#">gallery</a>
             <a href="#">location</a>
             <a href="#">contact</a>
         </nav>
+    </div>
+    
+    <div class="intro-img">
+        <img src="images/intro-head_bg.png" alt="">
+        <p class="intro-msg">
+            Navas' &amp; Rehna welcomes you.
+        </p>
     </div>
     
     <div class="intro-service-links">
@@ -138,6 +146,10 @@
         if(e.keyCode == 83) {
             $("*").css("outline", "0");
             }
+    });
+    
+    $(".nav-toggle").on("click",function(){
+       $(".intro-nav").toggleClass("open-nav"); 
     });
 
     $(".map").on("click", function(){
