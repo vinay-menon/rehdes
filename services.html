@@ -26,7 +26,8 @@
     
     <title>Rehnas Designer - Bridal Studio | Boutique | Beauty Salon</title>
 </head>
-<body>
+
+<body class="secondary-page_services">
    
 <section class="main-header">
         <div class="add-contact">
@@ -46,21 +47,62 @@
             <a href="#">contact</a>
         </nav>
 </section>
+   
+<section class="content-container">
+    <header>
+        <h1>Services</h1>
+        <div class="header-text">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, deleniti dolorum nihil sint illo. Libero id sequi iusto suscipit animi harum, rerum. Laborum nemo libero quos hic consequuntur possimus eos.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, deleniti dolorum nihil sint illo. Libero id sequi iusto suscipit animi harum, rerum. Laborum nemo libero quos hic consequuntur possimus eos.
+            </p>
+        </div>
+    </header>
+    
+    <div class="content">
+        <section class="content-section bridal">
+            <h2>Bridal Studio</h2>
+            <ul>
+                <li>Bridal Makeup</li>
+                <li>Mehendi</li>
+                <li>Royal Facials</li>
+            </ul>
+        </section>
+        <section class="content-section boutique">
+            <h2>Boutique</h2>
+            <ul>
+                <li>Lacha | Gown | Churidar | Saree | Pardha</li>
+                <li>Design &amp; Stitching</li>
+                <li>Computerised Embroidery</li>
+            </ul>
+        </section>
+        <section class="content-section beauty">
+            <h2>Beauty Salon</h2>
+            <ul>
+                <li>4K Tech</li>
+                <li>HD &amp; Air Brush</li>
+                <li>Spa</li>
+            </ul>
+        </section>
+    </div>
+</section>
     
 <script src="js/jq.js"></script>
 <script>
+    function debugLayout(t,e) {
+        t == "on" ? $(e).css("outline", "1px solid red") : $(e).css("outline", "0");
+    }
+    
     $("body").on("keydown", function(e){
         if(e.keyCode == 65) {
-            $("*").css("outline", "1px solid red");
+            debugLayout("on","*");
             }
         if(e.keyCode == 83) {
-            $("*").css("outline", "0");
+            debugLayout("off","*");
             }
     });
-
-    $(".map").on("click", function(){
-        $(".map iframe").css("pointer-events", "auto");
-    })
 </script>
 
 </body>

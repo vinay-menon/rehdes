@@ -142,12 +142,16 @@
     
 <script src="js/jq.js"></script>
 <script>
+    function debugLayout(t,e) {
+        t == "on" ? $(e).css("outline", "1px solid red") : $(e).css("outline", "0");
+    }
+    
     $("body").on("keydown", function(e){
         if(e.keyCode == 65) {
-            $("*").css("outline", "1px solid red");
+            debugLayout("on","*");
             }
         if(e.keyCode == 83) {
-            $("*").css("outline", "0");
+            debugLayout("off","*");
             }
     });
     
@@ -177,10 +181,10 @@
                 // if so, ad the fixed class
                 if ( header.is('.fixed-header') ) {
                     return;
-                    $(".block-w_half .logo img").attr("src", "images/logo_big - Copy.png")
+                    $(".block-w_half .logo img").attr("src", "images/logo_small.png")
                 }
                 header.addClass('fixed-header');
-                $(".block-w_half .logo img").attr("src", "images/logo_big - Copy.png")
+                $(".block-w_half .logo img").attr("src", "images/logo_small.png")
             } else {
                 // otherwise remove it
                 header.removeClass('fixed-header');
