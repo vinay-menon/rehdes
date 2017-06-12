@@ -290,6 +290,9 @@ h2 {
     opacity: 1;
     pointer-events: auto;
     }
+.open-nav .drop-dwn .intro-service-links {
+    display: none;
+    }
 .service-link:hover {
     transition: 0s;
 /*
