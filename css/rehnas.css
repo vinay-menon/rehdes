@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One');
+
 *, *:after, *:after {
     margin: 0;
     padding: 0;
@@ -20,9 +22,11 @@ a {
     color: inherit;
     text-decoration: none;
     }
-
+h1, h2, h3, h4, h5, h6 {    
+    font-family: 'Yeseva One', cursive;
+    }
 h2 {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     }
 
 .section-seperator {
@@ -524,10 +528,11 @@ h2 {
     }
 
 .content-container {
+    padding: 0 10%;
     }
 .content-container header {
-    max-width: 80%;
-    margin: 0 auto;
+/*    max-width: 80%;*/
+/*    margin: 0 auto;*/
     display: flex;
     align-items: center;
     margin-bottom: 120px;
@@ -535,11 +540,13 @@ h2 {
 .content-container h1 {
     width: 30%;
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
     padding-top: 60px;
     border-right: 15px solid;
     margin-bottom: auto;
     color: white;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
     }
 .content-container header .header-text {
     width: 70%;
@@ -554,18 +561,61 @@ h2 {
 
 .secondary-page_services {
     background-image: url(../images/service_bg.jpg);
-    background-size: contain;
+/*    background-size: contain;*/
+    background-attachment: fixed;
     background-position: bottom 50% left 0;
     }
 
 .content-section {
-    height: 100vh;
+/*    height: 100vh;*/
     background-color: white;
     display: flex;
+    transform: skewY(5deg);
+    padding: 60px 30px;
+    margin-bottom: 60px;
+    }
+.content-section:nth-child(2) {
+    transform: skewY(-5deg);
+    }
+.content-section:nth-child(2) .content-section_text {
+    transform: skewY(5deg);
+    margin-left: auto;
     }
 .content-section_text {
-    max-width: 500px;
-    margin-left: auto;
+    transform: skewY(-5deg);
+    }
+
+.content-section_text h2 {
+    font-size: 2rem;
+    color: hsl(330,89%,50%);
+    }
+
+.content-section_text .images {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin-left: -10%;
+    margin-right: -10%;
+    position: relative;
+    padding: 0 10px;
+    transform: skewX(-5deg);
+    }
+.content-section_text .image {
+    padding: 10px;
+    position: relative;
+    }
+.content-section_text .image:before {
+    content: "";
+    position: absolute;
+    top: 10px; left: 20px; bottom: 10px; right: 20px;
+    border: 10px solid white;
+    z-index: 999;
+    }
+.content-section_text img {
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+    transform: skewX(5deg);
     }
 
 @media (max-width: 926px) {
