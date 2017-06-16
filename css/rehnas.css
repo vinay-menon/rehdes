@@ -282,6 +282,7 @@ h2 {
     opacity: 0;
     pointer-events: none;
     transition: .5s;
+    text-shadow: none;
     }
 .drop-dwn:hover .intro-service-links {
     opacity: 1;
@@ -301,7 +302,7 @@ h2 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-color: hsla(335,20%,10%,.8);
+    background-color: hsla(335,20%,10%,1);
     transition: .5s;
     }
 .open-nav .intro-service-links {
