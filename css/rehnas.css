@@ -640,6 +640,7 @@ h2 {
 .content-section_text .image {
     padding: 10px;
     position: relative;
+    width: 30%;
     }
 .content-section_text .image:before {
     content: "";
@@ -649,6 +650,7 @@ h2 {
     z-index: 999;
     }
 .content-section_text .image img {
+    width: 100%;
     max-width: 100%;
     position: relative;
     z-index: 1;
@@ -656,15 +658,16 @@ h2 {
     }
 .content-section_text .section {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     margin-bottom: 30px;
     }
 .content-section_text .section > div {
     max-width: 30%;
-    margin-bottom: 30px;
+/*    margin-bottom: 30px;*/
     }
 .content-section_text .section h3 {
     margin-bottom: 15px;
+    text-align: center;
     }
 
 
