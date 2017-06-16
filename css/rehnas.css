@@ -437,6 +437,9 @@ h2 {
     margin-right: auto;
     margin-left: 0;
     }
+.intro-service-content h2 {
+    color: hsl(50,87%,36%);
+    }
 /*
 .intro-service-content:nth-child(1) {
     background-image: 
@@ -478,8 +481,18 @@ h2 {
 
 .intro-service-content p {
     max-width: 300px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     text-align: left;
+    }
+
+.service-promo {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: 0 auto;
+    }
+.service-promo img {
+/*    border-radius: 50%;*/
     }
 
 .global-kids-banner {
