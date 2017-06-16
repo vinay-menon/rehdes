@@ -43,9 +43,9 @@ h2 {
 
 .intro-header {
     min-height: 100vh;
-    background-image: 
+    /*background-image: 
         /*url(../images/intro-head_bg.png),*/
-        url(../images/pattern3.jpg)/*,*/
+        /*url(../images/pattern3.jpg)/*,*/
         /*url(../images/intro-bg.jpg),*/
         /*linear-gradient(
             135deg,
@@ -77,6 +77,7 @@ h2 {
     color: #fff;
 /*    color: #222;*/
 /*    padding: 120px 0 0;*/
+    position: relative;
     }
 
 .intro-img {
@@ -138,6 +139,8 @@ h2 {
 /*    margin-bottom: 120px;*/
 /*    margin: 0 auto;*/
     padding: 30px 0;
+    position: relative;
+    z-index: 2;
     }
 
 .intro-header .add-contact {
