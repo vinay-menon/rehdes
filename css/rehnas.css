@@ -630,11 +630,11 @@ h2 {
     display: flex;
     justify-content: space-between;
     background-color: white;
-    margin-left: -10%;
-    margin-right: -10%;
+/*    margin-left: -10%;*/
+/*    margin-right: -10%;*/
     margin-bottom: 30px;
     position: relative;
-    padding: 0 10px;
+/*    padding: 0 10px;*/
     transform: skewX(-5deg);
     }
 .content-section_text .image {
