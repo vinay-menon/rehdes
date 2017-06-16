@@ -133,7 +133,8 @@ h2 {
     }
 
 .block-w_half {
-    width: 50%;
+    width: 100%;
+/*    width: 50%;*/
 /*    height: auto;*/
     margin: auto;
     display: flex;
@@ -373,7 +374,6 @@ h2 {
     min-height: 600px;
     display: flex;
 /*    opacity: .8;*/
-    transition: .3s;
     background-color: white;
     }
 .intro-service-block:after {
@@ -394,6 +394,7 @@ h2 {
     background-size: cover;
     background-position: calc(100% - 20%) bottom;
     opacity: .8;
+    transition: .3s;
     }
 .intro-service-block:hover:before {
     opacity: 1;
@@ -488,11 +489,17 @@ h2 {
 .service-promo {
     display: flex;
     justify-content: space-around;
-    width: 60%;
+    max-width: 600px;
     margin: 0 auto;
+    }
+.service-promo div {
+/*    border-radius: 50%;*/
+    max-width: 250px;
+    padding: 5px;
     }
 .service-promo img {
 /*    border-radius: 50%;*/
+    max-width: 100%;
     }
 
 .global-kids-banner {
@@ -644,6 +651,9 @@ h2 {
     .block-w_half {
         width: 100%;
         }
+    .intro-header .add-contact {
+        width: 100%;
+        }
     .intro-header .logo {
         padding: 0 5%;
         margin: 30px 0;
@@ -679,6 +689,15 @@ h2 {
     }
 
 @media (max-width: 750px) {
+    .intro-header .add-contact {
+        flex-wrap: wrap;
+        }
+    .intro-header .add-contact > div {
+        width: 100%;
+        }
+    .intro-header .add-contact > div:first-child {
+        margin-bottom: 15px;
+        }
     .global-kids-pics {
         flex-wrap: wrap;
         max-width: 50%;
