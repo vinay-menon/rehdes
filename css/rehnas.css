@@ -715,7 +715,7 @@ h2 {
         background-size: contain;
 /*        background-attachment: scroll;*/
         background-image: url(../images/service_bg-mob.jpg);
-        background-position: top 0 right 0!important;
+        background-position: 0 0;
         }
     .content-container h1 {
         color: #222;
