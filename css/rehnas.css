@@ -712,7 +712,7 @@ h2 {
 
 @media (max-width: 620px) {
     .secondary-page_services {
-        background-size: contain;
+        background-size: 100% auto;
 /*        background-attachment: scroll;*/
         background-image: url(../images/service_bg-mob.jpg);
         background-position: top 0 right 0;
