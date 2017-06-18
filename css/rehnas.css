@@ -712,7 +712,8 @@ h2 {
 
 @media (max-width: 620px) {
     .secondary-page_services {
-        background-size: 100% auto;
+        background-size: cover;
+        background-image: url(../images/service_bg-mob.jpg);
         background-position: 50% 50%;
         }
     .content-container h1 {
