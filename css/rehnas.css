@@ -714,6 +714,7 @@ h2 {
 @media (max-width: 620px) {
     .secondary-page_services {
         background-image: url(../images/service_bg-mob.jpg);
+        background-size: cover;
         }
     .content-container h1 {
         color: #222;
