@@ -599,8 +599,7 @@ h2 {
     background-image: url(../images/service_bg.jpg);
 /*    background-size: contain;*/
     background-attachment: fixed;
-/*    background-position: bottom 50% left 0;*/
-        background-position: 0 0;
+    background-position: bottom 50% left 0;
     }
 
 .content-section {
@@ -716,6 +715,7 @@ h2 {
         background-image: url(../images/service_bg-mob.jpg);
         background-size: contain;
         background-attachment: scroll;
+        background-position: 0 0;
         }
     .content-container h1 {
         color: #222;
