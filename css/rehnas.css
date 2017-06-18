@@ -711,6 +711,12 @@ h2 {
     }
 
 @media (max-width: 620px) {
+    .secondary-page_services {
+        background-size: cover;
+/*        background-attachment: scroll;*/
+        background-image: url(../images/service_bg-mob.jpg);
+        background-position: top 0 right 0;
+        }
     .content-container h1 {
         color: #222;
         }
@@ -723,12 +729,6 @@ h2 {
     }
 
 @media (max-width: 500px) {
-    .secondary-page_services {
-        background-size: cover;
-/*        background-attachment: scroll;*/
-        background-image: url(../images/service_bg-mob.jpg);
-        background-position: top 0 right 0;
-        }
     .content-container header {
         flex-direction: column;
         }    
