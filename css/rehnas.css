@@ -109,9 +109,11 @@ h2 {
 .main-header {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
+    padding: 0 10%;
     margin: 0 auto 60px;
-    background-color: white;
+    background-color: hsla(0,0%,0%,.9);
+    color: white;
     }
 
 .intro-header .logo {
@@ -181,6 +183,19 @@ h2 {
     font-weight: bold;
     text-transform: UPPERCASE;
     }
+.intro-nav {
+    margin: 0 auto 0;
+    }
+.main-nav {
+    left: auto;
+    position: relative;
+    }
+.nav-toggle {
+    display: none;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 5px 15px;
+    }
 .open-nav {
     position: fixed;
     z-index: 999;
@@ -193,6 +208,7 @@ h2 {
     text-shadow: none;
     display: flex;
     flex-direction: column;
+    text-align: center;
     }
 .open-nav a {
     display: block!important;
@@ -201,19 +217,6 @@ h2 {
 .open-nav .nav-toggle {
     max-height: 100px;
     display: block!important;
-    }
-.intro-nav {
-    margin: 0 auto 0;
-    }
-.main-nav {
-    left: -120px;
-    position: relative;
-    }
-.nav-toggle {
-    display: none;
-    border-radius: 5px;
-    border: 1px solid white;
-    padding: 5px 15px;
     }
 .intro-nav a,
 .main-nav a {
@@ -228,15 +231,13 @@ h2 {
     background-repeat: no-repeat;
     transition: .3s;
     }
-.main-nav a {
-    color: #666;
-    }
 .intro-nav a:hover,
 .main-nav a:hover {
     background-size: 100% 100%;
     }
 
-.fixed-header.block-w_half {
+.fixed-header.block-w_half, 
+.fixed-header.main-header {
     position: fixed;
     top: 0; left: 0;
     z-index: 9999;
@@ -248,6 +249,9 @@ h2 {
     width: 100%;
     padding: 0;
     }
+.fixed-header{
+    color: #fff;
+    }
 .fixed-header .logo {
     padding: 0 0!important;
     max-width: 50px;
@@ -256,6 +260,7 @@ h2 {
     }
 .fixed-header .logo img {
     display: block;
+    max-width: 50px;
     }
 .fixed-header .add-contact {
     display: none;
@@ -611,7 +616,7 @@ h2 {
     background-color: white;
     display: flex;
     transform: skewY(5deg);
-    padding: 60px 30px;
+    padding: 30px;
     margin-bottom: 60px;
     border-radius: 15px;
     }
@@ -624,12 +629,21 @@ h2 {
     }
 .content-section_text {
     transform: skewY(-5deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
 
 .content-section_text h2 {
-    font-size: 2rem;
+    font-size: 3rem;
+    margin-bottom: 30px;
     color: hsl(330,89%,50%);
     text-align: center;
+    margin-top: -60px;
+    background-color: hsl(200,40%,20%);
+    color: hsl(50,67%,46%);
+    padding: 10px;
+    border-radius: 10px;
     }
 
 .content-section_text .images {
@@ -688,6 +702,7 @@ h2 {
 @media (max-width: 1200px) {
     .main-header {
         width: 100%;
+        padding: 0 10px;
         }
     .main-header .add-contact {
         width: 100%;
@@ -738,6 +753,17 @@ h2 {
     }
 
 @media (max-width: 500px) {
+    .main-header .add-contact {
+        flex-wrap: wrap;
+        text-align: center;
+        }
+    .main-header .add-contact > div {
+        width: 100%;
+        }
+    .main-header .add-contact > div:first-child {
+        margin-bottom: 15px;
+        margin-right: 0;
+        }
     .content-container header {
         flex-direction: column;
         }    
@@ -760,6 +786,9 @@ h2 {
     .intro-header .add-contact {
         width: 100%;
         }
+    .main-header .add-contact {
+        justify-content: space-around;
+        }
     .intro-header .logo {
         padding: 0 5%;
         margin: 30px 0;
@@ -767,13 +796,14 @@ h2 {
     .intro-nav {
         overflow: hidden;
         }
-    .intro-nav a {
+    .intro-nav a,
+    .main-nav a {
         display: none;
         }
     .nav-toggle {
         display: block;
         margin: 0 auto;
-        margin-bottom: 30px;
+/*        margin-bottom: 30px;*/
         }
     .fixed-header .nav-toggle {
         display: block;

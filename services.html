@@ -39,10 +39,11 @@
         </div>
 
         <div class="logo">
-            <img src="images/logo_small.jpg" alt="rehnas designer logo">
+            <img src="images/logo_big.png" alt="rehnas designer logo">
         </div>
 
         <nav class="main-nav">
+            <div class="nav-toggle">menu</div>
             <a href="#">services</a>
             <a href="#">about</a>
             <a href="#">gallery</a>
@@ -189,6 +190,45 @@
         if(e.keyCode == 83) {
             debugLayout("off","*");
             }
+    });
+    
+    $(".nav-toggle").on("click",function(){
+        $(".main-nav").toggleClass("open-nav"); 
+        if ($(this).html() == "close") {
+            $(this).html("menu");
+            } else {
+                $(this).html("close");
+            }
+    });
+    
+    $(function () {
+	
+		var header = $('.main-header');
+        
+		var mark = $('.content-container');
+	
+        var top = mark.offset().top - parseFloat(mark.css('margin-top').replace(/auto/, 0));
+
+        $(window).on('scroll', function(event) {
+            // what the y position of the scroll is
+            var y = $(this).scrollTop();
+
+            // whether that's below the form
+            if (y >= top) {
+                // if so, ad the fixed class
+                if ( header.is('.fixed-header') ) {
+                    return;
+                    $(".main-header .logo img").attr("src", "images/logo_small.png")
+                }
+                header.addClass('fixed-header');
+                $(".main-header .logo img").attr("src", "images/logo_small.png")
+            } else {
+                // otherwise remove it
+                header.removeClass('fixed-header');
+                $(".main-header .logo img").attr("src", "images/logo_big.png")
+            }
+        });
+
     });
 </script>
 
