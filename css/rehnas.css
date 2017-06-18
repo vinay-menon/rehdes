@@ -572,6 +572,9 @@ h2 {
     display: flex;
     align-items: center;
     margin-bottom: 120px;
+    background-color: hsla(0,0%,100%,.5);
+    padding: 0 0 30px;
+    border-radius: 10px;
     }
 .content-container h1 {
     width: 30%;
@@ -588,8 +591,9 @@ h2 {
     width: 70%;
     padding: 0 30px;
     font-size: 1.3rem;
-    font-weight: bold;
+/*    font-weight: bold;*/
     color: #222;
+    padding-top: 30px;
     }
 .content-container header p + p {
     margin-top: 30px;
@@ -609,6 +613,7 @@ h2 {
     transform: skewY(5deg);
     padding: 60px 30px;
     margin-bottom: 60px;
+    border-radius: 15px;
     }
 .content-section:nth-child(2) {
     transform: skewY(-5deg);
@@ -695,8 +700,12 @@ h2 {
         }
     
     .content-container {
-        padding: 0 0;
+        padding: 0 15px;
         align-content: center;
+        }
+    
+    .content-container header {
+        padding: 0 10px 30px;
         }
     
     .content-container h1 {
