@@ -671,6 +671,69 @@ h2 {
     text-align: center;
     }
 
+@media (max-width: 1500px) {
+    .content-container header {
+        margin-bottom: 60px;
+        }
+    .content-container h1 {
+        font-size: 4rem;
+        }
+    }
+
+@media (max-width: 1200px) {
+    .main-header {
+        width: 100%;
+        }
+    .main-header .add-contact {
+        width: 100%;
+        }
+    .main-header .logo {
+        width: 20%;
+        }
+    .main-nav {
+        left: auto;
+        }
+    
+    .content-container {
+        padding: 0 0;
+        align-content: center;
+        }
+    
+    .content-container h1 {
+        width: auto;
+        font-size: 3rem;
+        border-right: 10px solid;
+        padding-right: 15px;
+        }
+    .content-container header .header-text {
+        width: auto;
+        }
+    }
+
+@media (max-width: 620px) {
+    .content-container header .header-text {
+        font-size: 1rem;
+        }
+    .content-container header p + p {
+        margin-top: 15px;
+        }
+    }
+
+@media (max-width: 500px) {
+    .content-container header {
+        flex-direction: column;
+        }    
+    .content-container h1 {
+        margin-bottom: 30px;
+        border-right: 0;
+        padding-right: 0;
+        border-bottom: 10px solid;
+        }
+    .content-container header .header-text {
+        width: 100%;
+        }
+    }
+
 
 @media (max-width: 926px) {
     .block-w_half {
