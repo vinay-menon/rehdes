@@ -727,7 +727,7 @@ h2 {
         background-size: contain;
 /*        background-attachment: scroll;*/
         background-image: url(../images/service_bg-mob.jpg);
-        background-position: top 0 left 50%;
+        background-position: top 0 right 50%;
         }
     .content-container header {
         flex-direction: column;
