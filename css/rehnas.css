@@ -121,6 +121,7 @@ h2 {
     }
 .intro-header .logo img {
     width: 100%;
+    max-width: 528px;
     }
 
 .main-header .logo {
