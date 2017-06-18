@@ -600,6 +600,7 @@ h2 {
 /*    background-size: contain;*/
     background-attachment: fixed;
 /*    background-position: bottom 50% left 0;*/
+        background-position: 0 0;
     }
 
 .content-section {
@@ -712,10 +713,7 @@ h2 {
 
 @media (max-width: 620px) {
     .secondary-page_services {
-        background-size: contain;
-/*        background-attachment: scroll;*/
         background-image: url(../images/service_bg-mob.jpg);
-        background-position: 0 0;
         }
     .content-container h1 {
         color: #222;
