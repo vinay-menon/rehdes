@@ -455,6 +455,7 @@ h2 {
     }
 .content-container header .header-text {
 /*    width: 70%;*/
+    max-width: 1200px;
     padding: 0 30px;
     font-size: 1.3rem;
     color: #222;
