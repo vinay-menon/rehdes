@@ -443,7 +443,8 @@ h2 {
     border-radius: 10px;
     }
 .content-container h1 {
-    width: 30%;
+    width: 100%;
+    max-width: 500px;
     text-align: center;
     font-size: 5rem;
     padding-top: 60px;
