@@ -216,14 +216,18 @@ h2 {
     top: 0; left: 0;
     z-index: 9999;
     background-color: hsla(0,0%,0%,.9);
+    background-color: hsla(340,100%,20%,.9);
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding: 0;
     }
-.fixed-header{
+.fixed-header {
     color: #fff;
+    }
+.fixed-header .intro-nav {
+    background-color: transparent;
     }
 .fixed-header .logo {
     padding: 0 0!important;
@@ -377,9 +381,10 @@ h2 {
     }
 
 .intro-service-content p {
-    max-width: 300px;
+    max-width: 400px;
     margin: 0 auto 30px;
     text-align: left;
+    font-size: .9rem;
     }
 
 .service-promo {
@@ -490,14 +495,27 @@ h2 {
     background-position: bottom 50% left 0;
     }
 .secondary-page_about {
-    background-image: url(../images/about_bg.jpg);
+    background-image: url(../images/ser_bg.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: 0 0;
     }
 
+.secondary-page_about .main-header {
+    margin-bottom: 0;
+    }
+
+.secondary-page_about .content-container {
+    padding: 0 0;
+    }
+
 .secondary-page_about .content-container > header {
-    margin-top: 40vh;
+    margin-bottom: 0;
+    border-radius: 0;
+    }
+
+.secondary-page_about .content-section {
+    border-radius: 0;
     }
 
 .secondary-page_about .content-section,
@@ -599,7 +617,8 @@ h2 {
         width: 100%;
         padding: 0 10px;
         }
-    .main-header .add-contact {
+    .main-header .add-contact,
+    .intro-nav {
         width: 100%;
         }
     .main-header .logo {
@@ -632,6 +651,10 @@ h2 {
     }
 
 @media (max-width: 620px) {
+    .intro-header .add-contact,
+    .intro-nav {
+        border-radius: 0;
+        }
     .secondary-page_services {
         background-image: url(../images/service_bg-mob.jpg);
         background-size: cover;
