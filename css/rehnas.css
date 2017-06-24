@@ -85,6 +85,7 @@ h2 {
     padding: 0 10%;
     margin: 0 auto 60px;
     background-color: hsla(0,0%,0%,.9);
+    background-color: hsla(340,100%,20%,.9);
     color: white;
     }
 
@@ -460,10 +461,12 @@ h2 {
     }
 .content-container header {
     display: flex;
-    margin-bottom: 120px;
+/*    margin-bottom: 120px;*/
     background-color: hsla(0,0%,100%,.5);
     padding: 0 0 30px;
-    border-radius: 10px;
+/*    border-radius: 10px;*/
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     background-color: hsla(340,70%,50%,.8);
     }
 .content-container h1 {
@@ -498,6 +501,13 @@ h2 {
     background-position: bottom 50% left 0;
     }
 
+.secondary-page_services .main-header {
+    margin-bottom: 0;
+    }
+.secondary-page_services .content-container header {
+    padding-bottom: 120px;
+    }
+
 .secondary-page_about .content-section,
 .secondary-page_about .content-section:nth-child(2),
 .secondary-page_about .content-section_text {
@@ -511,7 +521,7 @@ h2 {
     transform: skewY(5deg);
     padding: 30px;
     margin-bottom: 60px;
-    border-radius: 15px;
+/*    border-radius: 15px;*/
     }
 .content-section:nth-child(2) {
     transform: skewY(-5deg);
@@ -537,6 +547,10 @@ h2 {
     color: hsl(50,87%,56%);
     padding: 10px;
     border-radius: 10px;
+    }
+
+.secondary-page_services .content {
+    background-color: hsla(340,70%,50%,.8);
     }
 
 .content-section_text .image {
@@ -579,7 +593,7 @@ h2 {
     }
 
 .secondary-page_about .main-header {
-/*    margin-bottom: 0;*/
+    margin-bottom: 0;
     }
 
 .secondary-page_about .content-container {
@@ -587,9 +601,11 @@ h2 {
     }
 
 .secondary-page_about .content-container > header {
-/*    margin-bottom: 0;*/
-/*    border-radius: 0;*/
-    margin-bottom: 60px;
+    margin-bottom: 0;
+    border-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+/*    margin-bottom: 60px;*/
     }
 
 .secondary-page_about .content-container > header h1 {
@@ -597,7 +613,7 @@ h2 {
     }
 
 .secondary-page_about .content-section {
-/*    border-radius: 0;*/
+    border-radius: 0;
 /*    margin-bottom: 0;*/
     }
 
@@ -633,7 +649,7 @@ h2 {
 /*    max-width: 800px!important;*/
     }
 .secondary-page_about .content-section .text {
-    min-width: 50%;
+    min-width: 45%;
     font-size: 1.4rem;
     margin-bottom: 30px;
     float: right;
@@ -642,7 +658,7 @@ h2 {
     margin-bottom: 30px;
     }
 .about-img {
-    min-width: 45%;
+    min-width: 50%;
     float: left;
     clear: left;
     margin-bottom: 60px;

@@ -86,7 +86,7 @@
                         </p>
                     </div>
                     <div class="about-img">
-                        <img src="images/about_img.jpg" alt="">
+                        <img src="images/about_img02.jpg" alt="">
                     </div>
                     <div class="text">
                         <p>
@@ -137,25 +137,25 @@
 	
         var top = mark.offset().top - parseFloat(mark.css('margin-top').replace(/auto/, 0));
 
-//        $(window).on('scroll', function(event) {
-//            // what the y position of the scroll is
-//            var y = $(this).scrollTop();
-//
-//            // whether that's below the form
-//            if (y >= top) {
-//                // if so, ad the fixed class
-//                if ( header.is('.fixed-header') ) {
-//                    return;
-//                    $(".main-header .logo img").attr("src", "images/logo_small.png")
-//                }
-//                header.addClass('fixed-header');
-//                $(".main-header .logo img").attr("src", "images/logo_small.png")
-//            } else {
-//                // otherwise remove it
-//                header.removeClass('fixed-header');
-//                $(".main-header .logo img").attr("src", "images/logo_big.png")
-//            }
-//        });
+        $(window).on('scroll', function(event) {
+            // what the y position of the scroll is
+            var y = $(this).scrollTop();
+
+            // whether that's below the form
+            if (y >= top) {
+                // if so, ad the fixed class
+                if ( header.is('.fixed-header') ) {
+                    return;
+                    $(".main-header .logo img").attr("src", "images/logo_small.png")
+                }
+                header.addClass('fixed-header');
+                $(".main-header .logo img").attr("src", "images/logo_small.png")
+            } else {
+                // otherwise remove it
+                header.removeClass('fixed-header');
+                $(".main-header .logo img").attr("src", "images/logo_big.png")
+            }
+        });
 
     });
 </script>
