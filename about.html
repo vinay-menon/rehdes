@@ -84,7 +84,6 @@
     <div class="content">
         <section class="content-section">
            <div class="content-section_text">
-                <h2>Bridal Studio</h2>
                 <div class="section">
                     <div class="image">
                         <img src="images/about_img.jpg" alt="">
@@ -99,6 +98,21 @@
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cumque tenetur quaerat quas, adipisci accusamus molestias perspiciatis! Explicabo atque beatae, nulla autem recusandae culpa laboriosam itaque, vero enim, rerum repellat!
                         </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cumque tenetur quaerat quas, adipisci accusamus molestias perspiciatis! Explicabo atque beatae, nulla autem recusandae culpa laboriosam itaque, vero enim, rerum repellat!
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cumque tenetur quaerat quas, adipisci accusamus molestias perspiciatis! Explicabo atque beatae, nulla autem recusandae culpa laboriosam itaque, vero enim, rerum repellat!
+                        </p>
+                    </div>
+                    <div class="image full-w">
+                        <img src="images/about_img.jpg" alt="">
+                    </div>
+                </div>
+                <div class="section full-w">
+                    <h2>Bridal Studio</h2>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.1855305896825!2d76.3677213146569!3d10.083879274351508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDA1JzAxLjkiTiA3NsKwMjInMTEuNyJF!5e0!3m2!1sen!2sin!4v1498222714538" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -138,25 +152,25 @@
 	
         var top = mark.offset().top - parseFloat(mark.css('margin-top').replace(/auto/, 0));
 
-        $(window).on('scroll', function(event) {
-            // what the y position of the scroll is
-            var y = $(this).scrollTop();
-
-            // whether that's below the form
-            if (y >= top) {
-                // if so, ad the fixed class
-                if ( header.is('.fixed-header') ) {
-                    return;
-                    $(".main-header .logo img").attr("src", "images/logo_small.png")
-                }
-                header.addClass('fixed-header');
-                $(".main-header .logo img").attr("src", "images/logo_small.png")
-            } else {
-                // otherwise remove it
-                header.removeClass('fixed-header');
-                $(".main-header .logo img").attr("src", "images/logo_big.png")
-            }
-        });
+//        $(window).on('scroll', function(event) {
+//            // what the y position of the scroll is
+//            var y = $(this).scrollTop();
+//
+//            // whether that's below the form
+//            if (y >= top) {
+//                // if so, ad the fixed class
+//                if ( header.is('.fixed-header') ) {
+//                    return;
+//                    $(".main-header .logo img").attr("src", "images/logo_small.png")
+//                }
+//                header.addClass('fixed-header');
+//                $(".main-header .logo img").attr("src", "images/logo_small.png")
+//            } else {
+//                // otherwise remove it
+//                header.removeClass('fixed-header');
+//                $(".main-header .logo img").attr("src", "images/logo_big.png")
+//            }
+//        });
 
     });
 </script>
