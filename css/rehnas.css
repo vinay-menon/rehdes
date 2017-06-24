@@ -310,6 +310,8 @@ h2 {
     }
 
 .intro-services {
+    margin: 0 auto;
+    max-width: 80%;
     margin-bottom: 60px;
     }
 
@@ -324,6 +326,7 @@ h2 {
     position: absolute;
     top: 30px; left: 30px; bottom: 30px; right: calc(50% + 30px);
     border: 1px solid hsl(50,60%,80%);
+    display: none;
     }
 .intro-service-block:nth-child(2):after {
     right: 30px; left: calc(50% + 30px);
@@ -335,22 +338,22 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: calc(100% - 20%) bottom;
-    opacity: .8;
+/*    opacity: .8;*/
     transition: .3s;
     }
 .intro-service-block:hover:before {
     opacity: 1;
     }
 .intro-service-block:nth-child(1):before {
-    background-image: url(../images/intro-service_bridal.jpg);
+    background-image: url(../images/intro-service_bridal-wtf.jpg);
     }
 .intro-service-block:nth-child(2):before {
-    background-image: url(../images/intro-service_boutique.jpg);
+    background-image: url(../images/intro-service_boutique-wtf.jpg);
     background-position: 50% 0;
     right: 0; left: 50%;
     }
 .intro-service-block:nth-child(3):before {
-    background-image: url(../images/intro-service_beauty.jpg);
+    background-image: url(../images/intro-service_beauty-wtf.jpg);
     }
 
 .intro-service-content {
